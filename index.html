@@ -4,56 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Fontawesome og ikoner-->
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
     <title>Track Shop</title>
 </head>
 <body>
     <div id="grid-container">
         <header>
-            <a href="index.html" id="logo"><img src="img/trackShop_logo.png" alt="Track Shop"></a>
             <nav id="nav">
-                <!-- Ikoner fra fontawesome -->
-                <a href="/cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="/search"><i class="fa-regular fa-magnifying-glass"></i></a>
-                <a href="/hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></a>
+                <a href="index.html" id="logo"><img src="img/trackShop_logo.png" alt="Track Shop logo"></a>
+                <div id="nav-small">
+                    <!-- Shopping cart ikon -->
+                    <i id="cart-nav" class="fa-solid fa-cart-shopping"></i>
+                    <!-- Søke ikon -->
+                    <i id="search-nav " class="fa-regular fa-magnifying-glass"></i>
+                    <!-- hamburger ikon -->
+                    <i id="ham-nav" class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="navbar">
+                    <article id="joggesko">
+                        <a href="#"><h3>Joggesko</h3></a>
+                        <ul>
+                            <li><a href="#">Sprint</a></li>
+                            <li><a href="#">Langsprint</a></li>
+                            <li><a href="#">Kast</a></li>
+                            <li><a href="#">Mellomdistanse</a></li>
+                            <li><a href="#">Langdistanse</a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <a href="#"><h3>Piggsko</h3></a>
+                        <ul>
+                            <li><a href="#">Sprint</a></li>
+                            <li><a href="#">Langsprint</a></li>
+                            <li><a href="#">Spyd</a></li>
+                            <li><a href="#">Diskos</a></li>
+                            <li><a href="#">Lengde</a></li>
+                            <li><a href="#">Mellomdistanse</a></li>
+                            <li><a href="#">Langdistanse</a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <a href="#"><h3>Informasjon</h3></a>
+                        <ul>
+                            <li><a href="#">Angrerett</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Om oss</a></li>
+                            <li><a href="#">Reklamasjon</a></li>
+                        </ul>
+                    </article>
+                    <button>
+                        <a href="/herre-dame"><h3>Herre / Dame</h3></a>
+                    </button>
+                </ul>
             </nav>
         </header>
         <!-- Dropdown meny section-->
-        <section id="dropdown-menu"> 
-            <article id="joggesko">
-                <a href="#"><h3>Joggesko</h3></a>
-                <ul>
-                    <li><a href="#">Sprint</a></li>
-                    <li><a href="#">Langsprint</a></li>
-                    <li><a href="#">Kast</a></li>
-                    <li><a href="#">Mellomdistanse</a></li>
-                    <li><a href="#">Langdistanse</a></li>
-                </ul>
-            </article>
-            <article>
-                <a href="piggsko.html"><h3>Piggsko</h3></a>
-                <ul>
-                    <li><a href="piggsko.html">Sprint</a></li>
-                    <li><a href="piggsko.html">Langsprint</a></li>
-                    <li><a href="piggsko.html">Spyd</a></li>
-                    <li><a href="piggsko.html">Diskos</a></li>
-                    <li><a href="piggsko.html">Lengde</a></li>
-                    <li><a href="piggsko.html">Mellomdistanse</a></li>
-                    <li><a href="piggsko.html">Langdistanse</a></li>
-                </ul>
-            </article>
-            <article>
-                <a href="#"><h3>Informasjon</h3></a>
-                <ul>
-                    <li><a href="#">Angrerett</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Om oss</a></li>
-                    <li><a href="#">Reklamasjon</a></li>
-                </ul>
-            </article>
-            <button>
-                <a href="/herre-dame"><h3>Herre / Dame</h3></a>
-            </button>
-        </section>
         <section id="shopping-cart">
             <h2>Handlekurv</h2>
             <ul>
