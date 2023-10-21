@@ -5,16 +5,168 @@
     --black: #202020;
 }
 
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif ;
 }
 
 header {
+    font-size: 1rem;
+    grid-area: header;
 
+}
+
+header button {
+    display: flex;
+    text-decoration: none;
+    border: none;
+    color: #202020;
+    margin: auto;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+#dame-text {
+    opacity: 0.4;
+}
+
+
+
+header article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 3px solid var(--red);
+}
+
+#nav-small {
+    font-size: 2.5rem;
+    color: var(--red);
+    margin: 0.5rem 1rem;
+    justify-content: center;
 }
 
 #nav-inside {
-    border-top: 2px solid #6B0000;
+    border-top: 2px solid var(--red);
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 1rem;
 }
+
+#handlekurv-inside {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    display: none;
+}
+
+.shopping-cart {
+    display: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--red);
+    color: white;
+    width: 100%;
+    top: 75px;
+    position: absolute;
+    padding-bottom: 1rem;
+}
+
+.responsive a{
+    color: white;
+    text-decoration: none;
+}
+
+.responsive-cart {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    top: 75px;
+    position: absolute;
+    padding-bottom: 1rem;
+    border: 4px solid #6B0000;
+}
+
+.responsive-cart li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1rem 1rem 1rem;
+    padding: 0;
+    border-bottom:1px solid var(--red) ;
+}
+
+.responsive-cart ul{
+    padding: 0;
+
+}
+
+.responsive-cart h2{
+    text-align: center;
+    border-bottom: 1px solid var(--red);
+}
+
+#sum-cart{
+    border: 0;
+}
+
+#handlekurv-inside button{
+    border: none;
+    background-color: var(--red);
+    color: white;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--red);
+    color: white;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#kontakt-oss, #folg-oss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0;
+    
+}
+/* Definerer et grid-container som inneholder header, main og footer */
