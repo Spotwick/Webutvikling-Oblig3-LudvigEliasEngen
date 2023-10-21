@@ -1,0 +1,20 @@
+/* setter globale variabler for fargekodene til nettsiden */
+:root {
+    --red: #6B0000;
+    --grey: #D9D9D9;
+    --black: #202020;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+header {
+
+}
+
+#nav-inside {
+    border-top: 2px solid #6B0000;
+    width: 100%;
+    box-sizing: border-box;
+}
