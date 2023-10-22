@@ -15,10 +15,22 @@ body {
     font-family: Arial, Helvetica, sans-serif ;
 }
 
+main h3{
+    font-size: 1.5rem;
+}
+
+main h2 {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header {
     font-size: 1rem;
     grid-area: header;
-
 }
 
 header button {
@@ -196,8 +208,41 @@ footer a{
     justify-self: center;
 }
 
-.product-title{
+
+
+figure.product-image {
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
     background-color: var(--grey);
+    justify-content: center;
+    width: 18rem;
+}
+
+
+.caption {
+    display: block;
+    margin: 0.5rem;
+    color: #202020;
+}
+
+.caption span{
+    color: red;
+
+}
+
+.produkt-fremvisning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produkt-fremvisning img{
+    width: 18rem;
+}
+
+#anmeldelse a{
+    color: blue;
 }
 
 
