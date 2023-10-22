@@ -81,12 +81,14 @@ header nav {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 1rem;
+    z-index: 2;
 }
 
 #handlekurv-inside {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 1rem;
+    z-index: 2;
 }
 
 .navbar {
@@ -349,7 +351,7 @@ figure.product-image {
 #dropdown-content-storrelse {
     display: none;
     position: absolute;
-    min-width: 10rem;
+    min-width: 14rem;
     z-index: 1;
     background-color: white;
     border-color: var(--grey);
@@ -367,9 +369,19 @@ figure.product-image {
 
 #storrelse-dropdown {
     background-color: #202020;
-    min-width: 10rem;
+    min-width: 14rem;
 }
 
 #produkt-knapper {
+    display: flex;
     padding-top: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#kjop-knapp {
+    background-color: var(--red);
+    border: none;
+    min-width: 14rem;
+    color: white;
 }
