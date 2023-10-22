@@ -214,7 +214,7 @@ footer a{
 
 #kampanje-generell {
     background-color: var(--red);
-    margin-top: 0.3 rem;
+    margin-top: 0.3rem;
 }
 
 .product {
@@ -396,6 +396,12 @@ figure.product-image {
 #storrelse-dropdown {
     background-color: #202020;
     min-width: 14rem;
+    text-align: center;
+}
+
+#storrelse-dropdown button{
+    background-color: #202020;
+
 }
 
 #produkt-knapper {
@@ -404,6 +410,11 @@ figure.product-image {
     flex-direction: row;
     justify-content: space-around;
 }
+
+#produkt-knapper span{
+    font-size: 1.5rem;
+}
+
 
 #kjop-knapp {
     background-color: var(--red);
@@ -419,7 +430,6 @@ figure.product-image {
     
     main {
         display: grid;
-        grid-column-start: 0;
         grid-column-end: 3;
     }
 
@@ -427,7 +437,7 @@ figure.product-image {
         display: none;
     }
 
-    .search-nav {
+    #search-nav {
         display: none;
     }
 
@@ -601,11 +611,13 @@ figure.product-image {
         align-items: start;
     }
 
+
     /* Footer */
     footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
     }
 
     #kontakt-oss {
