@@ -15,11 +15,62 @@
         <header>
             <nav id="nav">
                 <a href="index.html" id="logo"><img src="img/trackShop_logo.png" alt="Track Shop logo"></a>
+                <section class="desktop-dropdown">
+                    <button id="dropdown-joggesko">
+                        <a href="">
+                            <h4>Joggesko</h4>
+                            <ul class="dropdown-content-desktop">
+                                <a href="">Sprint</a>
+                                <a href="">Langsprint</a>
+                                <a href="">Kast</a>
+                                <a href="">Mellomdistanse</a>
+                                <a href="">Langdistanse</a>
+                            </ul>
+                        </a>
+                        
+                    </button>
+                
+                    <button id="dropdown-piggsko">
+                        <a href="piggsko.html">
+                            <h4>Piggsko</h4>
+                            <ul class="dropdown-content-desktop">
+                                <a href="piggsko.html">Sprint</a>
+                                <a href="piggsko.html">Langsprint</a>
+                                <a href="piggsko.html">Spyd</a>
+                                <a href="piggsko.html">Diskos</a>
+                                <a href="piggsko.html">Lengde</a>
+                                <a href="piggsko.html">Mellomdistanse</a>
+                                <a href="piggsko.html">Langdistanse</a>
+                            </ul>
+                        </a>    
+                    </button>
+                    
+                    <button id="dropdown-informasjon">
+                        <a href="">
+                            <h4>Informasjon</h4>
+                            <ul class="dropdown-content-desktop">
+                                <a href="">Angrerett</a>
+                                <a href="">FAQ</a>
+                                <a href="">Om oss</a>
+                                <a href="">Reklamasjon</a>
+                            </ul>
+                        </a>
+                    </button>
+                    
+                </section>
+
+                <section id="search-bar">
+                    <form>
+                        <input type="text" name="search" id="search">
+                    </form>
+                    <i id="search-nav " class="fa-regular fa-magnifying-glass"></i>
+                </section>
+                
                 <div id="nav-small">
+                    <!-- Søke ikon -->
+                    <i id="search-nav" class="fa-regular fa-magnifying-glass"></i>
                     <!-- Shopping cart ikon -->
                     <i id="cart-nav" class="fa-solid fa-cart-shopping"></i>
-                    <!-- Søke ikon -->
-                    <i id="search-nav " class="fa-regular fa-magnifying-glass"></i>
                     <!-- hamburger ikon -->
                     <i id="ham-nav" class="fa-solid fa-bars"></i>
                 </div>
@@ -35,15 +86,15 @@
                         </ul>
                     </article>
                     <article>
-                        <a href="#"><h3>Piggsko</h3></a>
+                        <a href="/piggsko.html"><h3>Piggsko</h3></a>
                         <ul>
-                            <li><a href="#">Sprint</a></li>
-                            <li><a href="#">Langsprint</a></li>
-                            <li><a href="#">Spyd</a></li>
-                            <li><a href="#">Diskos</a></li>
-                            <li><a href="#">Lengde</a></li>
-                            <li><a href="#">Mellomdistanse</a></li>
-                            <li><a href="#">Langdistanse</a></li>
+                            <li><a href="piggsko.html">Sprint</a></li>
+                            <li><a href="piggsko.html">Langsprint</a></li>
+                            <li><a href="piggsko.html">Spyd</a></li>
+                            <li><a href="piggsko.html">Diskos</a></li>
+                            <li><a href="piggsko.html">Lengde</a></li>
+                            <li><a href="piggsko.html">Mellomdistanse</a></li>
+                            <li><a href="piggsko.html">Langdistanse</a></li>
                         </ul>
                     </article>
                     <article>
@@ -108,28 +159,33 @@
                 <figure class="slideshow">
                     <img src="img/shoe_nike.jpg">
                     <p class="slidenumber">1 / 3</p>
+                    <figcaption>Image by <a href="https://pixabay.com/users/keram-257754/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=346986">Keram Borz</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=346986">Pixabay</a> <br></figcaption>
                     
                 </figure>
 
                 <figure class="slideshow">
                     <img src="img/shoe_meindl.jpg">
                     <p class="slidenumber">2 / 3</p>
+                    <figcaption>Image by <a href="https://pixabay.com/users/stux-12364/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629643">Stefan Schweihofer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629643">Pixabay</a></figcaption>
                 </figure>
 
                 <figure class="slideshow">
                     <img src="img/shoe_nike.jpg">
                     <p class="slidenumber">3 / 3</p>
+                    <figcaption>Image by <a href="https://pixabay.com/users/keram-257754/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=346986">Keram Borz</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=346986">Pixabay</a> <br></figcaption>
                 </figure>
 
                 <!-- Next and previous -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            Image by <a href="https://pixabay.com/users/keram-257754/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=346986">Keram Borz</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=346986">Pixabay</a> <br>
-            Image by <a href="https://pixabay.com/users/stux-12364/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629643">Stefan Schweihofer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629643">Pixabay</a>
-            <h3>Nike</h3>
-            <h2>Superfly Elite 2 - Herre</h2>
-            <h2>2049,-</h2>
+
+            <section id="product-text">
+                <h3>Nike</h3>
+                <h2>Superfly Elite 2 - Herre</h2>
+                <h2>2049,-</h2>
+            </section>
+
             <section id="color-selection">
                 <button class="box" id="color-black"></button>
                 <button class="box" id="color-white"></button>
