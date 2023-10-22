@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
                     <!-- hamburger ikon -->
                     <i id="ham-nav" class="fa-solid fa-bars"></i>
                 </div>
-                <ul class="navbar">
+                <ul id="nav-inside" class="navbar">
                     <article id="joggesko">
                         <a href="#"><h3>Joggesko</h3></a>
                         <ul>
@@ -56,42 +56,50 @@
                         </ul>
                     </article>
                     <button>
-                        <a href="/herre-dame"><h3>Herre / Dame</h3></a>
+                        <h3>Herre/ </h3><h3 id="dame-text"> Dame</h3>
                     </button>
                 </ul>
+                <section id="handlekurv-inside" class="navbar">
+                    <h2>Handlekurv</h2>
+                    <ul>
+                        <li>
+                            Nike max <br>
+                            Str EU 42
+                            
+                            <p>
+                                <i class="fa-solid fa-minus"></i>
+                                <span>1</span>
+                                <i class="fa-solid fa-plus"></i>
+                            </p>
+
+                            1499,-
+                        </li>
+                        <li>
+                            Adidas Pro <br>
+                            Str EU 42
+
+                            <p>
+                                <i class="fa-solid fa-minus"></i>
+                                <span>1</span>
+                                <i class="fa-solid fa-plus"></i>
+                            </p>
+                            1499,-
+                        </li>
+                    </ul>
+        
+                    <li id="sum-cart">
+                        <h3>Sum varer: 2998,-</h3>
+                        <button id="to_cart_btn "><h3>Gå til kasse</h3></button>
+
+                    </li>
+                    
+        
+                </section>
             </nav>
         </header>
-        <section id="shopping-cart">
-            <h2>Handlekurv</h2>
-            <ul>
-                <li>
-                    Nike max <br>
-                    Str EU 42
-                    <section id="shopping-cart-btns">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </section>
-                    1499,-
-                </li>
-                <li>
-                    Adidas Pro <br>
-                    Str EU 42
-                    <section id="shopping-cart-btns">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </section>
-                    1499,-
-                </li>
-            </ul>
 
-            <p>Sum varer: 2998,-</p>
-            <button id="to_cart_btn "><h2>Gå til kasse</h2></button>
-
-        </section>
         <main>
-            p>Hjem / Piggsko / Sprint / <span>Superfly Elite 2</span></p>
+            <p>Hjem / Piggsko / Sprint / <span>Superfly Elite 2</span></p>
 
             <!-- Slideshow av bildet, inspirasjon tatt fra w3schools:
             https://www.w3schools.com/howto/howto_js_slideshow.asp-->
@@ -173,6 +181,33 @@
 
         </footer>
     </div>
+    <script>
+        // fra forelesning
+        // Finn navigasjonsmenyen
+        let x = document.querySelector(".navbar")
+        // Legg til en hendelseslytter for klikk på menyikonet (ham)
+        document.getElementById("ham-nav").addEventListener("click", (e) => {
+            // Sjekk om navigasjonsmenyen allerede har klassen "responsive"
+            if (x.className === "navbar") {
+                // Hvis ikke, legg til klassen for responsiv meny
+                x.className += " responsive";
+            } else {
+                // Hvis den allerede har klassen, fjern den for å gjøre menyen skjult
+                x.className = "navbar"
+            }
+        })
+
+        // For the shopping cart
+        let y = document.querySelector("#handlekurv-inside");
+        document.getElementById("cart-nav").addEventListener("click", (e) => {
+            if (y.className === "navbar") {
+                y.className += " responsive-cart";
+            } else {
+                y.className = "navbar";
+            }
+        });
+
+    </script>
 </body>
 </html>
 

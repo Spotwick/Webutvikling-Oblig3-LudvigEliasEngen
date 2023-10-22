@@ -159,14 +159,46 @@ footer a{
     color: white;
 }
 
-
-
 #kontakt-oss, #folg-oss {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
     margin: 0;
-    
 }
-/* Definerer et grid-container som inneholder header, main og footer */
+
+#kampanjer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 4rem;
+}
+
+#kampanjer button {
+    border: none;
+    border-radius: 3px; 
+    color: white;
+}
+
+#kampanje-adidas {
+    background-color:#408DD4;
+}
+
+#kampanje-generell {
+    background-color: var(--red);
+    margin-top: 0.3 rem;
+}
+
+.product {
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.product-title{
+    background-color: var(--grey);
+}
+
+
+
