@@ -78,6 +78,8 @@ header nav {
     display: none;
 }
 
+
+
 #nav-small {
     font-size: 2.5rem;
     color: var(--red);
@@ -201,10 +203,13 @@ footer a{
     border: none;
     border-radius: 3px; 
     color: white;
+    font-size: xx-large;
 }
 
 #kampanje-adidas {
     background-color:#408DD4;
+    
+
 }
 
 #kampanje-generell {
@@ -410,7 +415,7 @@ figure.product-image {
         display: none;
     }
 
-    #search-nav {
+    .search-nav {
         display: none;
     }
 
@@ -424,15 +429,24 @@ figure.product-image {
         min-width: 10rem;
     }
 
+
     .desktop-dropdown a{
         display: inline-block;
         margin: 0 1.5rem;
         position: relative;
-        color: white;
+        color: black;
+    }
+
+    .desktop-dropdown span h4 {
+        color: black;
     }
 
     .desktop-dropdown h4{
         color: black;
+    }
+
+    ul .dropdown-content-desktop{
+        color: white;
     }
 
 

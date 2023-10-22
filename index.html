@@ -16,46 +16,39 @@
             <nav id="nav">
                 <a href="index.html" id="logo"><img src="img/trackShop_logo.png" alt="Track Shop logo"></a>
                 <section class="desktop-dropdown">
-                    <button id="dropdown-joggesko">
-                        <a href="">
-                            <h4>Joggesko</h4>
-                            <ul class="dropdown-content-desktop">
-                                <a href="">Sprint</a>
-                                <a href="">Langsprint</a>
-                                <a href="">Kast</a>
-                                <a href="">Mellomdistanse</a>
-                                <a href="">Langdistanse</a>
-                            </ul>
-                        </a>
-                        
-                    </button>
+                    <section id="dropdown-joggesko">
+                        <h4><a href="">Joggesko</a></h4>
+                        <ul class="dropdown-content-desktop">
+                            <li><a href="">Sprint</a></li>
+                            <li><a href="">Langsprint</a></li>
+                            <li><a href="">Kast</a></li>
+                            <li><a href="">Mellomdistanse</a></li>
+                            <li><a href="">Langdistanse</a></li>
+                        </ul>
+                    </section>
                 
-                    <button id="dropdown-piggsko">
-                        <a href="piggsko.html">
-                            <h4>Piggsko</h4>
-                            <ul class="dropdown-content-desktop">
-                                <a href="piggsko.html">Sprint</a>
-                                <a href="piggsko.html">Langsprint</a>
-                                <a href="piggsko.html">Spyd</a>
-                                <a href="piggsko.html">Diskos</a>
-                                <a href="piggsko.html">Lengde</a>
-                                <a href="piggsko.html">Mellomdistanse</a>
-                                <a href="piggsko.html">Langdistanse</a>
-                            </ul>
-                        </a>    
-                    </button>
+                    <section id="dropdown-piggsko">
+                        <h4><a href="piggsko.html">Piggsko</a></h4>
+                        <ul class="dropdown-content-desktop">
+                            <li><a href="piggsko.html">Sprint</a></li>
+                            <li><a href="piggsko.html">Langsprint</a></li>
+                            <li><a href="piggsko.html">Spyd</a></li>
+                            <li><a href="piggsko.html">Diskos</a></li>
+                            <li><a href="piggsko.html">Lengde</a></li>
+                            <li><a href="piggsko.html">Mellomdistanse</a></li>
+                            <li><a href="piggsko.html">Langdistanse</a></li>
+                        </ul>
+                    </section>
                     
-                    <button id="dropdown-informasjon">
-                        <a href="">
-                            <h4>Informasjon</h4>
-                            <ul class="dropdown-content-desktop">
-                                <a href="">Angrerett</a>
-                                <a href="">FAQ</a>
-                                <a href="">Om oss</a>
-                                <a href="">Reklamasjon</a>
-                            </ul>
-                        </a>
-                    </button>
+                    <section id="dropdown-informasjon">
+                        <h4><a href="">Informasjon</a></h4>
+                        <ul class="dropdown-content-desktop">
+                            <li><a href="">Angrerett</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Om oss</a></li>
+                            <li><a href="">Reklamasjon</a></li>
+                        </ul>
+                    </section>
                     
                 </section>
 
@@ -63,7 +56,7 @@
                     <form>
                         <input type="text" name="search" id="search">
                     </form>
-                    <i id="search-nav " class="fa-regular fa-magnifying-glass"></i>
+                    <i id="search-nav-desk" class="fa-regular fa-magnifying-glass"></i>
                 </section>
                 
                 <div id="nav-small">
@@ -75,40 +68,52 @@
                     <i id="ham-nav" class="fa-solid fa-bars"></i>
                 </div>
                 <ul id="nav-inside" class="navbar">
-                    <article id="joggesko">
-                        <a href="#"><h3>Joggesko</h3></a>
-                        <ul>
-                            <li><a href="#">Sprint</a></li>
-                            <li><a href="#">Langsprint</a></li>
-                            <li><a href="#">Kast</a></li>
-                            <li><a href="#">Mellomdistanse</a></li>
-                            <li><a href="#">Langdistanse</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="/piggsko.html"><h3>Piggsko</h3></a>
-                        <ul>
-                            <li><a href="piggsko.html">Sprint</a></li>
-                            <li><a href="piggsko.html">Langsprint</a></li>
-                            <li><a href="piggsko.html">Spyd</a></li>
-                            <li><a href="piggsko.html">Diskos</a></li>
-                            <li><a href="piggsko.html">Lengde</a></li>
-                            <li><a href="piggsko.html">Mellomdistanse</a></li>
-                            <li><a href="piggsko.html">Langdistanse</a></li>
-                        </ul>
-                    </article>
-                    <article>
-                        <a href="#"><h3>Informasjon</h3></a>
-                        <ul>
-                            <li><a href="#">Angrerett</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Om oss</a></li>
-                            <li><a href="#">Reklamasjon</a></li>
-                        </ul>
-                    </article>
-                    <button>
-                        <h3>Herre/ </h3><h3 id="dame-text"> Dame</h3>
-                    </button>
+                    <li>
+                        <article id="joggesko">
+                            <a href="#"><h3>Joggesko</h3></a>
+                            <ul>
+                                <li><a href="#">Sprint</a></li>
+                                <li><a href="#">Langsprint</a></li>
+                                <li><a href="#">Kast</a></li>
+                                <li><a href="#">Mellomdistanse</a></li>
+                                <li><a href="#">Langdistanse</a></li>
+                            </ul>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <a href="/piggsko.html"><h3>Piggsko</h3></a>
+                            <ul>
+                                <li><a href="piggsko.html">Sprint</a></li>
+                                <li><a href="piggsko.html">Langsprint</a></li>
+                                <li><a href="piggsko.html">Spyd</a></li>
+                                <li><a href="piggsko.html">Diskos</a></li>
+                                <li><a href="piggsko.html">Lengde</a></li>
+                                <li><a href="piggsko.html">Mellomdistanse</a></li>
+                                <li><a href="piggsko.html">Langdistanse</a></li>
+                            </ul>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <a href="#"><h3>Informasjon</h3></a>
+                            <ul>
+                                <li><a href="#">Angrerett</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Om oss</a></li>
+                                <li><a href="#">Reklamasjon</a></li>
+                            </ul>
+                        </article>
+                    </li>
+
+                    <li>
+                        <button>
+                            <span>Herre/ </span><span id="dame-text"> Dame</span>
+                        </button>
+                    </li>
+
                 </ul>
                 <section id="handlekurv-inside" class="navbar">
                     <h2>Handlekurv</h2>
@@ -138,11 +143,14 @@
                         </li>
                     </ul>
         
-                    <li id="sum-cart">
-                        <h3>Sum varer: 2998,-</h3>
-                        <button id="to_cart_btn "><h3>Gå til kasse</h3></button>
+                    <ul>
+                        <li id="sum-cart">
+                            <h3>Sum varer: 2998,-</h3>
+                            <button id="to_cart_btn"><span>Gå til kasse</span></button>
+    
+                        </li>
+                    </ul>
 
-                    </li>
                     
         
                 </section>
@@ -153,8 +161,8 @@
         <main>
 
             <section id="kampanjer">
-                <button id="kampanje-adidas"><h2>50% på alle Adidas piggsko!</h2></button>
-                <button id="kampanje-generell"><h2>Bli medlem for billigere produkter!</h2></button>
+                <button id="kampanje-adidas"><span>50% på alle Adidas piggsko!</span></button>
+                <button id="kampanje-generell"><span>Bli medlem for billigere produkter!</span></button>
             </section>
 
             <!-- En section for hver produkt kategori -->
@@ -416,9 +424,10 @@
                     <figure class="product-image">
                         <figcaption class="caption">Nike ultra performance 2023</figcaption>
                         <img src="/img/shoe_nike.jpg" alt="picture of shoe">
-                        <figcaption>Image by <a href="https://pixabay.com/users/keram-257754/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=346986">Keram Borz</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=346986">Pixabay</a></figcaption>
                     </figure>
                 </a>
+                Image by <a href="https://pixabay.com/users/keram-257754/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=346986">Keram Borz</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=346986">Pixabay</a>
+
             </article>
 
 
